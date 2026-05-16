@@ -141,3 +141,24 @@ values("Kola_2005","Naveen123@gmail.com",18);
 | User_id (int) | User_Name (varchar(20)) | Email (varchar(20)) | Gender (varchar(20)) | Age (int) | is_active (tinyint(1)) |
 |---------------|------------------------|--------------------|----------------------|-----------|------------------------|
 | 1             | Kola_2005              | Naveen123@gmail.com| NULL                 | 18        | 1                      |
+
+
+### All uses one strong table 
+
+```sql
+create table  if not exists Users (
+  User_id int primary key auto_increment,
+  User_Name varchar(20) not null unique,
+  Name varchar(20) not null,
+  Ph_no bigint not null unique,
+  Email varchar(20) not null unique,
+  Gender varchar(10),
+  Age int check(Age >=17 and Age <=35),
+  is_active boolean default true
+)
+```
+
+```sql
+insert into Users(User_Name,Name,Ph_no,Email,Gender,Age)
+values("Naveen_01","Naveen Kola",8247356197,"Naveen@123","Male",21);
+```
