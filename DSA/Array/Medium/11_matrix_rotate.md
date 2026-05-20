@@ -22,8 +22,8 @@ print(Solution().Rotate_90([[0,1,2],[0,2,3],[9,8,2]]))
 ### Optimal
 
 1. Transpose the matrix
-  1. change the columns are row 
-  2. rows are columns
+    1. change the columns are row 
+    2. rows are columns
 2. reverse the every row
 
 ```python
