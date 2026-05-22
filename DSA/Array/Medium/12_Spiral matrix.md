@@ -38,5 +38,5 @@ class Solution:
                     ans.append(matrix[i][left])
                 left+=1
         return ans
-print(Solution().Spiral_matrix([[1, 2, 3], [4, 5, 6], [7, 8, 9]]))
+print(Solution().Spiral_matrix())
 ```
