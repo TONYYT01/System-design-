@@ -1,0 +1,11 @@
+{
+    "files.autoSave": "onFocusChange",
+    "workbench.colorTheme": "Dark 2026",
+    "editor.mouseWheelZoom": true,
+    "window.autoDetectColorScheme": false,
+    "editor.inlineSuggest.edits.showCollapsed": true,
+    "editor.inlineSuggest.showToolbar": "always",
+    "editor.inlineSuggest.suppressSuggestions": true,
+    "editor.quickSuggestionsDelay": 1,
+    "editor.inlineSuggest.experimental.showOnSuggestConflict": "always"
+}
