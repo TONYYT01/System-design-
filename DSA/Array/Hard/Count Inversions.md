@@ -43,5 +43,41 @@ print(Solution().count_inversions([5,3,2,4,1]))
 ### optimal 
 
 ```python
-
+class Solution:
+    def Merge(self,nums,low,mid,high):
+        temp=[]
+        left=low
+        right=mid+1
+        count=0
+        while (left<=mid and right<=high):
+            if nums[left]<=nums[right]:
+                temp.append(nums[left])
+                left+=1
+            else:
+                temp.append(nums[right])
+                count=(mid-low+1)
+                right+=1
+        while (left<=mid):
+            temp.append(nums[left])
+            left+=1
+        while(right<=high):
+            temp.append(nums[right])
+            right+=1
+        k=0
+        for i in range(low,high+1):
+            nums[i]=temp[k]
+            k+=1
+        return count
+    def Ms(self,nums,low,high):
+        count=0
+        if low>=high:
+            return count
+        mid=(low+high)//2
+        count+=self.Ms(nums,low,mid)
+        count+=self.Ms(nums,mid+1,high)
+        count+=self.Merge(nums,low,mid,high)
+        return count
+    def Merge_sort(self,nums,n):
+        return self.Ms(nums,0,n-1)
+print(Solution().Merge_sort([5,3,1,4,2],5))
 ```
