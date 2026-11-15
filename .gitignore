@@ -1,0 +1,16 @@
+
+# Ignore bin folders in every directory
+**/bin/
+
+# Ignore obj folders in every directory
+**/obj/
+
+# Ignore Visual Studio generated files
+.vs/
+*.user
+*.suo
+
+# Ignore build outputs
+*.dll
+*.exe
+*.pdb
