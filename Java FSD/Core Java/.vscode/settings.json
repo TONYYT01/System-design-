@@ -1,5 +1,5 @@
 {
-    "files.autoSave": "onFocusChange",
+    "files.autoSave": "off",
     "workbench.colorTheme": "Dark 2026",
     "editor.mouseWheelZoom": true,
     "window.autoDetectColorScheme": false,
